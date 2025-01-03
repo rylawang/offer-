@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Výpočet hubnutí</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: url('background-image.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        h1 {
+            font-size: 36px; /* 加大字体 */
+            color: #6FA54E;
+            text-align: center;
+            margin: 20px 0 10px 0;
+        }
+
+        h2 {
+            font-size: 28px; /* 加大字体 */
+            color: #000;
+            text-align: center;
+            margin: 0 0 30px 0;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .button {
+            background-color: #6FA54E;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .button:hover {
+            background-color: #5C9441;
+        }
+
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .option {
+            background: #f8f8f8;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .option:hover {
+            background: #6FA54E;
+            color: white;
+        }
+
+        .image-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            gap: 20px;
+            z-index: 1;
+        }
+
+        .image-container img {
+            max-width: 150px;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Spočítejte, kolik kilogramů</h1>
+    <h2>musíte zhubnout</h2>
+
+    <div class="container">
+        <div class="options">
+            <div class="option" onclick="location.href='link1.html'">18-25 let</div>
+            <div class="option" onclick="location.href='link2.html'">26-35 let</div>
+            <div class="option" onclick="location.href='link3.html'">36-45 let</div>
+            <div class="option" onclick="location.href='link4.html'">46+ let</div>
+        </div>
+    </div>
+
+    <!-- Images beside the main content -->
+    <div class="image-container">
+        <img src="fruit1.jpg" alt="Fruit 1">
+        <img src="fruit2.jpg" alt="Fruit 2">
+    </div>
+</body>
+</html>
